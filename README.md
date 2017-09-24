@@ -1,4 +1,4 @@
-# Cleaver
+# Robocup@home 
 
 30-second Slideshows for Hackers. http://jdan.github.io/cleaver/
 
@@ -44,59 +44,7 @@ Into this:
 
 ![output](https://i.cloudup.com/cIssKFjcB6.gif)
 
-## Quick Start
 
-Get it [on NPM](https://npmjs.org/package/cleaver):
-
-```sh
-npm install -g cleaver
-# To update: npm update -g cleaver
-```
-
-And run it like so:
-
-```bash
-cleaver path/to/something.md
-```
-
-You can also watch for changes on a file and automatically recompile with:
-
-```bash
-cleaver watch path/to/something-changing.md
-
-# Watching for changes on presentation.md. Ctrl-C to abort.
-# Rebuilding: Thu Nov 07 2013 00:15:03 GMT-0500 (EST)
-# Rebuilding: Thu Nov 07 2013 00:15:21 GMT-0500 (EST)
-# Rebuilding: Thu Nov 07 2013 00:16:01 GMT-0500 (EST)
-# Rebuilding: Thu Nov 07 2013 00:16:09 GMT-0500 (EST)
-```
-
-Use the `--debug` flag to display debug information:
-
-```bash
-$ cleaver --debug examples/basic.md
-  cleaver loaded input document +0ms
-  helper read /Users/jordan/Projects/cleaver/templates/layout.mustache +0ms
-  helper read /Users/jordan/Projects/cleaver/templates/author.mustache +0ms
-  helper read /Users/jordan/Projects/cleaver/templates/default.mustache +0ms
-  cleaver loaded templates +3ms
-  cleaver parsed metadata +4ms
-  helper read /Users/jordan/Projects/cleaver/resources/default.css +13ms
-  helper read /Users/jordan/Projects/cleaver/resources/github.css +0ms
-  helper read /Users/jordan/Projects/cleaver/resources/script.js +0ms
-  cleaver loaded static assets +9ms
-  cleaver rendered slides +1ms
-  cleaver rendered presentation +1ms
-```
-
-## More Info
-
-**Cleaver** is a one-stop shop for generating HTML presentations in
-record time. Using some spiced up markdown, you can produce
-good-looking, interactive presentations with a just a few lines of text.
-
-Slides are written in [Markdown](http://daringfireball.net/projects/markdown/),
-and are separated by two dashes (`--`).
 
 ## Options
 
@@ -157,33 +105,8 @@ will be loaded into your slideshow.
 
 ![reveal-cleaver-theme](https://i.cloudup.com/wlzisDLe32-1200x1200.png)
 
-### Specifying Themes
 
-Themes may be specified by one of the following options:
 
-* An absolute or relative path to a directory
-* A URL to a directory
-* A github repository in the form of *username/reponame*
-
-### Overriding Themes
-
-By default, *style.css* and *script.js* will be **appended** to the default
-stylesheets and javascripts included in cleaver presentations. If you wish to
-completely override these defaults, you must include another file in your
-theme - options.json - corresponding to the following:
-
-```json
-{
-  "override": true
-}
-```
-
-Template files will automatically override the default templates.
-
-### More Info
-
-For more information on themes, check out
-[our documentation](https://github.com/jdan/cleaver/blob/master/docs/themes.md).
 
 ## Markup
 
@@ -275,16 +198,6 @@ To navigate the slideshow:
 
 The toggle fullscreen mode, press the **ENTER** key.
 
-## Contributing
-
-* Fork it
-* Clone it
-* Install dependencies (`npm install`)
-* Checkout a release branch (`git checkout -b feature/cool-wordart`)
-* Make changes, commit, and push (`npm test` and make sure it passes)
-* Open a pull request!
-
-With &lt;3,<br/>[@jdan](http://jordanscales.com)
 
 --
 
