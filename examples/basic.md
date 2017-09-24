@@ -1,8 +1,8 @@
-title: Basic Example
+title: Robocup@home
 author:
-  name: Jordan Scales
-  twitter: jdan
-  url: http://jordanscales.com
+  name: Fabrice Jumel
+
+  url: http://fabricejumel.github.io
 output: basic.html
 
 --
